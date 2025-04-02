@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nareshkanna S - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Remove hover effects */
+        section:hover {
+            transition: none;
+        }
+
+        #career-objective:hover,
+        #skills:hover,
+        #Profiles:hover,
+        #projects:hover,
+        #achievements:hover,
+        #contact:hover {
+            background: none;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+    <nav class="bg-gray-800 p-4 shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold tracking-wide">Nareshkanna S</a>
+            <div class="space-x-6">
+                <a href="#career-objective" class="text-gray-300 hover:text-white transition">About Me</a>
+                <a href="#skills" class="text-gray-300 hover:text-white transition">Skills</a>
+                <a href="#Profiles" class="text-gray-300 hover:text-white transition">Profiles</a>
+                <a href="#projects" class="text-gray-300 hover:text-white transition">Projects</a>
+                <a href="#achievements" class="text-gray-300 hover:text-white transition">Achievements</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center py-16">
+        <img src="Profile4.jpg" alt="Profile Picture" class="w-52 h-92 rounded-full mx-auto mb-4 shadow-lg">
+        <h1 class="text-5xl font-bold animate-fadeIn">Nareshkanna S</h1>
+        <p class="text-xl text-gray-400 mt-4">AI & Data Science Enthusiast | Software Developer</p>
+    </header>
+
+    <section id="career-objective" class="max-w-4xl mx-auto p-8 bg-gray-800 rounded-lg shadow-md animate-slideUp">
+        <h2 class="text-3xl font-semibold mb-4 text-white">About Me</h2>
+        <p class="text-gray-200">Aspiring AI and Data Science professional and Software Developer with expertise in
+            machine learning, NLP, and intelligent document processing. Passionate about building AI-driven automation
+            systems, leveraging OCR and LLM-based solutions for information extraction and verification. Proficient in
+            Python, C++, FastAPI, React, and MongoDB, with hands-on experience in optimization, data visualization, and
+            cloud technologies. Seeking an opportunity to apply my problem-solving skills in AI development, software
+            engineering, and scalable machine learning applications.</p>
+    </section>
+
+    <section id="skills" class="max-w-4xl mx-auto p-8 mt-8 bg-gray-800 rounded-lg shadow-md animate-slideUp">
+        <h2 class="text-3xl font-semibold mb-4 text-white">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <span class="bg-gray-800 px-4 py-2 rounded text-center text-white">Python</span>
+            <span class="bg-gray-800 px-4 py-2 rounded text-center text-white">C++</span>
+            <span class="bg-gray-800 px-4 py-2 rounded text-center text-white">FastAPI</span>
+            <span class="bg-gray-800 px-4 py-2 rounded text-center text-white">React</span>
+            <span class="bg-gray-800 px-4 py-2 rounded text-center text-white">MongoDB</span>
+            <span class="bg-gray-800 px-4 py-2 rounded text-center text-white">Figma</span>
+        </div>
+    </section>
+
+    <section id="Profiles" class="max-w-4xl mx-auto p-8 mt-8 bg-gray-800 rounded-lg shadow-md animate-slideUp">
+        <h2 class="text-3xl font-semibold mb-4 text-white">Profiles</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <a href="https://www.linkedin.com/in/nareshkannasln/" target="_blank"
+                class="profile-link text-white bg-gray-800 px-4 py-2 rounded text-center hover:bg-gray-700 transition">LinkedIn</a>
+            <a href="https://github.com/nareshkannasln" target="_blank"
+                class="profile-link text-white bg-gray-800 px-4 py-2 rounded text-center hover:bg-gray-700 transition">GitHub</a>
+            <a href="https://leetcode.com/nareshkannasln/" target="_blank"
+                class="profile-link text-white bg-gray-800 px-4 py-2 rounded text-center hover:bg-gray-700 transition">Leetcode</a>
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-4xl mx-auto p-8 mt-8 bg-gray-800 rounded-lg shadow-md animate-slideUp">
+        <h2 class="text-3xl font-semibold mb-4 text-white">Projects</h2>
+        <ul class="space-y-6">
+            <li class="bg-gray-800 p-6 rounded-lg shadow">
+                <h3 class="text-xl font-semibold text-white">InsightVerify</h3>
+                <p class="text-gray-300">Automated document verification using OCR & LLMs.</p>
+                <a href="https://github.com/nareshkannasln/SIH-Entity-mapping" target="_blank"
+                    class="text-blue-400 hover:underline">GitHub Link</a>
+            </li>
+            <li class="bg-gray-800 p-6 rounded-lg shadow">
+                <h3 class="text-xl font-semibold text-white">Attendance System</h3>
+                <p class="text-gray-300">Barcode & Face recognition-based attendance marking.</p>
+                <a href="https://github.com/nareshkannasln/InstaAttend-Attendance-System-Using-Barcode-and-Face-Recognition"
+                    target="_blank" class="text-blue-400 hover:underline">GitHub Link</a>
+            </li>
+            <li class="bg-gray-800 p-6 rounded-lg shadow">
+                <h3 class="text-xl font-semibold text-white">QuickViz</h3>
+                <p class="text-gray-300">Data visualization for student performance.</p>
+                <a href="https://github.com/nareshkannasln/QuickViz---student-performance-visualization" target="_blank"
+                    class="text-blue-400 hover:underline">GitHub Link</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="achievements" class="max-w-4xl mx-auto p-8 mt-8 bg-gray-800 rounded-lg shadow-md animate-slideUp">
+        <h2 class="text-3xl font-semibold mb-4 text-white">Achievements</h2>
+        <ul class="list-disc list-inside text-gray-200 space-y-2">
+            <li>Smart India Hackathon 2024 (Finalist): Problem Statement 1652 - Extraction and Verification of
+                Information from Semi-Categorized Data. Vivekananda Institute of Professional Studies, New Delhi.
+                [Dec-2024]</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="max-w-4xl mx-auto p-8 mt-8 bg-gray-800 rounded-lg shadow-md animate-slideUp">
+        <h2 class="text-3xl font-semibold mb-4 text-white">Contact</h2>
+        <p>Email: <a href="mailto:nareshkannashanmugam@gmail.com"
+                class="text-blue-400 hover:underline">nareshkannashanmugam@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/nareshkannasln" class="text-blue-400 hover:underline">nareshkannasln</a>
+        </p>
+        <p>Mobile: <a href="+91 9894594624" class="text-blue-400 hover:underline">9894594624</a></p>
+    </section>
+</body>
+
+</html>
