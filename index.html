@@ -2,14 +2,40 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nareshkanna S - Portfolio</title>
+
+  <!-- SEO & Metadata -->
+  <meta name="description" content="Portfolio of Nareshkanna S - AI & Data Science Enthusiast and Software Developer" />
+  <meta name="author" content="Nareshkanna S" />
+  <meta property="og:title" content="Nareshkanna S - Portfolio" />
+  <meta property="og:description" content="AI & Data Science | Software Developer | FastAPI | React | MongoDB" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="Profile4.jpg" />
+  <meta property="og:url" content="https://yourdomain.com" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
+          colors: {
+            primary: '#1a237e',
+            secondary: '#263238',
+            accent: '#1565c0',
+            light: '#f5f5f5',
+            card: '#e3e6ea',
+            border: '#b0bec5',
+            text: '#212121',
+            heading: '#0d1333',
+            link: '#0d47a1',
+            hover: '#1976d2',
+          },
           animation: {
             fadeIn: "fadeIn 2s ease-in forwards",
             slideUp: "slideUp 1.5s ease-out forwards"
@@ -28,118 +54,151 @@
       }
     }
   </script>
-  <link href="https://unpkg.com/@tabler/icons-webfont/tabler-icons.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/@tabler/icons-webfont/tabler-icons.min.css" rel="stylesheet" />
 </head>
 
-<body class="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white font-sans">
+<body class="bg-light text-text font-sans">
 
   <!-- Navbar -->
-  <nav class="sticky top-0 z-50 bg-black/70 backdrop-blur-md shadow-md p-4">
+  <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-md p-4 border-b border-border">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-gradient bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent">Nareshkanna S</h1>
+      <h1 class="text-2xl font-bold text-heading">Nareshkanna S</h1>
       <div class="space-x-4 text-sm md:text-base">
-        <a href="#career-objective" class="hover:text-pink-400 transition">About</a>
-        <a href="#skills" class="hover:text-pink-400 transition">Skills</a>
-        <a href="#Profiles" class="hover:text-pink-400 transition">Profiles</a>
-        <a href="#projects" class="hover:text-pink-400 transition">Projects</a>
-        <a href="#achievements" class="hover:text-pink-400 transition">Achievements</a>
-        <a href="#contact" class="hover:text-pink-400 transition">Contact</a>
+        <a href="#career-objective" class="hover:text-accent transition text-link">About</a>
+        <a href="#skills" class="hover:text-accent transition text-link">Skills</a>
+        <a href="#Profiles" class="hover:text-accent transition text-link">Profiles</a>
+        <a href="#projects" class="hover:text-accent transition text-link">Projects</a>
+        <a href="#experience" class="hover:text-accent transition text-link">Experience</a>
+        <a href="#certificates" class="hover:text-accent transition text-link">Certificates</a>
+        <a href="#contact" class="hover:text-accent transition text-link">Contact</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <header class="text-center py-16 animate-fadeIn">
-    <img src="Profile4.jpg" alt="Profile Picture"
-      class="w-48 h-88 rounded-full mx-auto border-4 border-pink-500 shadow-lg hover:scale-105 transition">
-    <h1 class="text-5xl font-extrabold mt-6 text-gradient bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Nareshkanna S</h1>
-    <p class="text-xl text-gray-300 mt-2">AI & Data Science Enthusiast | Software Developer</p>
+    <img src="Profile4.jpg" alt="Nareshkanna Profile Picture"
+      class="w-48 h-68 object-cover rounded-full mx-auto border-4 border-primary shadow-lg" loading="lazy" />
+    <h1 class="text-5xl font-extrabold mt-6 text-heading">Nareshkanna S</h1>
+    <p class="text-xl text-secondary mt-2">AI & Data Science Enthusiast | Software Developer</p>
   </header>
 
-  <!-- About Section -->
-  <section id="career-objective"
-    class="max-w-5xl mx-auto p-8 bg-gray-900/70 backdrop-blur rounded-xl shadow-lg animate-slideUp">
-    <h2 class="text-3xl font-semibold text-pink-400 mb-4">About Me</h2>
-    <p class="text-gray-200 leading-relaxed">Aspiring AI and Data Science professional and Software Developer with expertise in machine learning, NLP, and intelligent document processing. Passionate about building AI-driven automation systems using OCR and LLMs. Proficient in Python, C++, FastAPI, React, MongoDB, and cloud technologies.</p>
+  <!-- About -->
+  <section id="career-objective" class="max-w-5xl mx-auto p-8 bg-card rounded-xl shadow-lg border border-border animate-slideUp">
+    <h2 class="text-3xl font-semibold text-primary mb-4">About Me</h2>
+    <p class="text-text leading-relaxed">
+      Aspiring AI and Data Science professional and Software Developer with expertise in machine learning, NLP, and intelligent document processing. Passionate about building AI-driven automation systems using OCR and LLMs. Proficient in Python, C++, FastAPI, React, MongoDB, and cloud technologies.
+    </p>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills"
-    class="max-w-5xl mx-auto p-8 mt-10 bg-gray-900/70 rounded-xl shadow-lg animate-slideUp">
-    <h2 class="text-3xl font-semibold text-pink-400 mb-6">Skills</h2>
+  <!-- Skills -->
+  <section id="skills" class="max-w-5xl mx-auto p-8 mt-10 bg-card rounded-xl shadow-lg border border-border animate-slideUp">
+    <h2 class="text-3xl font-semibold text-primary mb-6">Skills</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-      <span class="px-4 py-2 bg-pink-700 rounded-full text-white font-semibold hover:bg-pink-600 transition">Python</span>
-      <span class="px-4 py-2 bg-purple-700 rounded-full text-white font-semibold hover:bg-purple-600 transition">C++</span>
-      <span class="px-4 py-2 bg-yellow-600 rounded-full text-white font-semibold hover:bg-yellow-500 transition">FastAPI</span>
-      <span class="px-4 py-2 bg-blue-600 rounded-full text-white font-semibold hover:bg-blue-500 transition">React</span>
-      <span class="px-4 py-2 bg-green-600 rounded-full text-white font-semibold hover:bg-green-500 transition">MongoDB</span>
-      <span class="px-4 py-2 bg-pink-600 rounded-full text-white font-semibold hover:bg-pink-500 transition">Figma</span>
+      <span class="px-4 py-2 bg-primary text-white rounded-full font-semibold hover:bg-accent transition">Python</span>
+      <span class="px-4 py-2 bg-secondary text-white rounded-full font-semibold hover:bg-accent transition">C++</span>
+      <span class="px-4 py-2 bg-accent text-white rounded-full font-semibold hover:bg-primary transition">FastAPI</span>
+      <span class="px-4 py-2 bg-link text-white rounded-full font-semibold hover:bg-hover transition">React</span>
+      <span class="px-4 py-2 bg-border text-heading rounded-full font-semibold hover:bg-secondary hover:text-white transition">MongoDB</span>
+      <span class="px-4 py-2 bg-primary text-white rounded-full font-semibold hover:bg-accent transition">Figma</span>
     </div>
   </section>
 
-  <!-- Profiles Section -->
-  <section id="Profiles"
-    class="max-w-5xl mx-auto p-8 mt-10 bg-gray-900/70 rounded-xl shadow-lg animate-slideUp">
-    <h2 class="text-3xl font-semibold text-pink-400 mb-6">Profiles</h2>
+  <!-- Profiles -->
+  <section id="Profiles" class="max-w-5xl mx-auto p-8 mt-10 bg-card rounded-xl shadow-lg border border-border animate-slideUp">
+    <h2 class="text-3xl font-semibold text-primary mb-6">Profiles</h2>
     <div class="flex flex-wrap gap-4">
-      <a href="https://www.linkedin.com/in/nareshkannasln/" target="_blank"
-        class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+      <a href="https://www.linkedin.com/in/nareshkannasln/" target="_blank" class="flex items-center gap-2 bg-white border border-border px-4 py-2 rounded-lg hover:bg-accent hover:text-white transition text-link">
         <i class="ti ti-brand-linkedin text-lg"></i> LinkedIn
       </a>
-      <a href="https://github.com/nareshkannasln" target="_blank"
-        class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-lg hover:bg-purple-600 transition">
+      <a href="https://github.com/nareshkannasln" target="_blank" class="flex items-center gap-2 bg-white border border-border px-4 py-2 rounded-lg hover:bg-accent hover:text-white transition text-link">
         <i class="ti ti-brand-github text-lg"></i> GitHub
       </a>
-      <a href="https://leetcode.com/nareshkannasln/" target="_blank"
-        class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-lg hover:bg-yellow-600 transition">
+      <a href="https://leetcode.com/nareshkannasln/" target="_blank" class="flex items-center gap-2 bg-white border border-border px-4 py-2 rounded-lg hover:bg-accent hover:text-white transition text-link">
         <i class="ti ti-code text-lg"></i> Leetcode
       </a>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects"
-    class="max-w-5xl mx-auto p-8 mt-10 bg-gray-900/70 rounded-xl shadow-lg animate-slideUp">
-    <h2 class="text-3xl font-semibold text-pink-400 mb-6">Projects</h2>
-    <div class="grid gap-6">
-      <div class="bg-gray-800 p-6 rounded-lg hover:shadow-xl transition">
-        <h3 class="text-xl font-bold">InsightVerify</h3>
-        <p class="text-gray-300 mt-1">OCR & LLM-based automated document verification.</p>
-        <a href="https://github.com/nareshkannasln/SIH-Entity-mapping" class="text-blue-400 hover:underline">GitHub →</a>
+  <!-- Projects -->
+  <section id="projects" class="max-w-5xl mx-auto p-8 mt-10 bg-card rounded-xl shadow-lg border border-border animate-slideUp">
+    <h2 class="text-3xl font-semibold text-primary mb-6">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white border border-border p-6 rounded-lg hover:shadow-xl transition">
+        <h3 class="text-xl font-bold text-heading">InsightVerify</h3>
+        <p class="text-secondary mt-1">OCR & LLM-based automated document verification.</p>
+        <a href="https://github.com/nareshkannasln/SIH-Entity-mapping" class="text-link hover:underline">GitHub →</a>
       </div>
-      <div class="bg-gray-800 p-6 rounded-lg hover:shadow-xl transition">
-        <h3 class="text-xl font-bold">Attendance System</h3>
-        <p class="text-gray-300 mt-1">Barcode & face recognition-based attendance.</p>
-        <a href="https://github.com/nareshkannasln/InstaAttend-Attendance-System-Using-Barcode-and-Face-Recognition" class="text-blue-400 hover:underline">GitHub →</a>
+      <div class="bg-white border border-border p-6 rounded-lg hover:shadow-xl transition">
+        <h3 class="text-xl font-bold text-heading">Attendance System</h3>
+        <p class="text-secondary mt-1">Barcode & face recognition-based attendance system.</p>
+        <a href="https://github.com/nareshkannasln/InstaAttend-Attendance-System-Using-Barcode-and-Face-Recognition" class="text-link hover:underline">GitHub →</a>
       </div>
-      <div class="bg-gray-800 p-6 rounded-lg hover:shadow-xl transition">
-        <h3 class="text-xl font-bold">QuickViz</h3>
-        <p class="text-gray-300 mt-1">Data visualization of student performance.</p>
-        <a href="https://github.com/nareshkannasln/QuickViz---student-performance-visualization" class="text-blue-400 hover:underline">GitHub →</a>
+      <div class="bg-white border border-border p-6 rounded-lg hover:shadow-xl transition">
+        <h3 class="text-xl font-bold text-heading">QuickViz</h3>
+        <p class="text-secondary mt-1">Student performance visualization dashboard.</p>
+        <a href="https://github.com/nareshkannasln/QuickViz---student-performance-visualization" class="text-link hover:underline">GitHub →</a>
       </div>
     </div>
   </section>
 
-  <!-- Achievements Section -->
-  <section id="achievements"
-    class="max-w-5xl mx-auto p-8 mt-10 bg-gray-900/70 rounded-xl shadow-lg animate-slideUp">
-    <h2 class="text-3xl font-semibold text-pink-400 mb-6">Achievements</h2>
-    <ul class="list-disc list-inside text-gray-200 space-y-2">
-      <li><strong>Smart India Hackathon 2024 (Finalist):</strong> Extraction & verification of semi-categorized data. [Dec-2024, VIPS Delhi]</li>
-    </ul>
+  <!-- Experience -->
+  <section id="experience" class="max-w-5xl mx-auto p-8 mt-10 bg-card rounded-xl shadow-lg border border-border animate-slideUp">
+    <h2 class="text-3xl font-semibold text-primary mb-6 text-center">Experience</h2>
+    <div class="relative border-l-2 border-primary ml-4">
+      <div class="mb-10 ml-6">
+        <div class="absolute w-4 h-4 bg-primary rounded-full left-[-10px] top-2"></div>
+        <h3 class="text-xl font-bold text-heading">Software Engineering Intern - Aerele Technologies</h3>
+        <span class="text-sm text-secondary">June 2025 - Present</span>
+        <p class="text-text mt-2">Working on enterprise-level web applications with FastAPI and MongoDB. Contributing to backend APIs and optimizing database queries for performance.</p>
+        <a href="https://aerele.in/" class="text-link hover:underline mt-1 inline-block" target="_blank">Visit Aerele →</a>
+      </div>
+    </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact"
-    class="max-w-5xl mx-auto p-8 mt-10 mb-20 bg-gray-900/70 rounded-xl shadow-lg animate-slideUp">
-    <h2 class="text-3xl font-semibold text-pink-400 mb-6">Contact</h2>
-    <p class="mb-2"><i class="ti ti-mail text-pink-500 mr-2"></i><a href="mailto:nareshkannashanmugam@gmail.com"
-        class="text-blue-400 hover:underline">nareshkannashanmugam@gmail.com</a></p>
-    <p class="mb-2"><i class="ti ti-brand-github text-pink-500 mr-2"></i><a href="https://github.com/nareshkannasln"
-        class="text-blue-400 hover:underline">github.com/nareshkannasln</a></p>
-    <p><i class="ti ti-phone text-pink-500 mr-2"></i><a href="tel:+919894594624" class="text-blue-400 hover:underline">+91 98945 94624</a></p>
+  <!-- Floating Logo -->
+  <a href="https://aerele.in/" target="_blank" class="fixed bottom-4 right-4 z-50 bg-white p-2 rounded-full shadow-xl border border-border hover:scale-105 transition" title="Intern @ Aerele Technologies">
+    <img src="assets/logos/aerele_logo.jpeg" alt="Aerele Logo" class="w-14 h-14 object-contain" />
+  </a>
+
+  <!-- Certificates -->
+  <section id="certificates" class="max-w-7xl mx-auto p-8 mt-10 bg-card rounded-xl shadow-lg border border-border animate-slideUp">
+    <h2 class="text-3xl font-semibold text-primary mb-10 text-center">Certificates</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white rounded-lg p-4 shadow-lg border border-border">
+        <h3 class="text-lg font-semibold mb-2 text-center text-heading">AWS Academy Cloud Foundations</h3>
+        <iframe src="assets/certificates/certificates/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20241105-26-d8ij6y.pdf" class="w-full h-64 rounded-md" loading="lazy"></iframe>
+      </div>
+      <div class="bg-white rounded-lg p-4 shadow-lg border border-border">
+        <h3 class="text-lg font-semibold mb-2 text-center text-heading">Internship Certificate</h3>
+        <iframe src="assets/certificates/certificates/Internship Certificate.pdf" class="w-full h-64 rounded-md" loading="lazy"></iframe>
+      </div>
+      <div class="bg-white rounded-lg p-4 shadow-lg border border-border">
+        <h3 class="text-lg font-semibold mb-2 text-center text-heading">Intro to Machine Learning</h3>
+        <img src="assets/certificates/certificates/Nareshkanna S - Intro to Machine Learning.png" alt="ML Certificate" class="w-full h-64 object-contain rounded-md" loading="lazy" />
+      </div>
+      <div class="bg-white rounded-lg p-4 shadow-lg border border-border">
+        <h3 class="text-lg font-semibold mb-2 text-center text-heading">Python Basics</h3>
+        <iframe src="assets/certificates/certificates/python_basic certificate.pdf" class="w-full h-64 rounded-md" loading="lazy"></iframe>
+      </div>
+      <div class="bg-white rounded-lg p-4 shadow-lg border border-border">
+        <h3 class="text-lg font-semibold mb-2 text-center text-heading">SIH 2024 Certificate</h3>
+        <iframe src="assets/certificates/certificates/SIH Certificate.pdf" class="w-full h-64 rounded-md" loading="lazy"></iframe>
+      </div>
+      <div class="bg-white rounded-lg p-4 shadow-lg border border-border">
+        <h3 class="text-lg font-semibold mb-2 text-center text-heading">SQL Basics</h3>
+        <iframe src="assets/certificates/certificates/sql_basic certificate.pdf" class="w-full h-64 rounded-md" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-5xl mx-auto p-8 mt-10 mb-20 bg-card rounded-xl shadow-lg border border-border animate-slideUp">
+    <h2 class="text-3xl font-semibold text-primary mb-6">Contact</h2>
+    <p class="mb-2"><i class="ti ti-mail text-accent mr-2"></i><a href="mailto:nareshkannashanmugam@gmail.com" class="text-link hover:underline">nareshkannashanmugam@gmail.com</a></p>
+    <p class="mb-2"><i class="ti ti-brand-github text-accent mr-2"></i><a href="https://github.com/nareshkannasln" class="text-link hover:underline">github.com/nareshkannasln</a></p>
+    <p><i class="ti ti-phone text-accent mr-2"></i><a href="tel:+919894594624" class="text-link hover:underline">+91 98945 94624</a></p>
   </section>
 
 </body>
-
 </html>
